@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<Group stylesheets="@../../../Style/acilirPencere.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.application.depo.YeniUrunController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="570.0" prefWidth="734.0" stylesheets="/Style/MainStyle.css">
+            <children>
+                <Label fx:id="lblUst" alignment="CENTER" layoutX="4.0" layoutY="14.0" prefHeight="30.0" prefWidth="726.0" text="YENI URUN">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Label>
+                <GridPane hgap="1.0" layoutX="17.0" layoutY="60.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label fx:id="lblUrunId" text="Urun Id :" />                 
+                        <Label fx:id="lblUrunIsmi" text="Urun Ismi :" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                        <Label fx:id="lblAlimYapan" text="Alim Yapan :" GridPane.rowIndex="4" />
+                        <Label fx:id="lblAciklama" text="Aciklama :" GridPane.rowIndex="6" />
+                        <Label fx:id="lblSatici" text="Satici :" GridPane.rowIndex="12" />
+                        <Label fx:id="lblMarka" text="Marka :" GridPane.columnIndex="4" />
+                        <Label fx:id="lblModel" text="Model :" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label fx:id="lblAlimTarihi" text="Alim Tarihi :" GridPane.rowIndex="10" />
+                        <TextField fx:id="tfUrunId" GridPane.columnSpan="3" GridPane.rowIndex="1" />                  
+                        <TextArea fx:id="taUrunAciklama" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="7" GridPane.rowSpan="3" />                  
+                        <DatePicker fx:id="dpDate" GridPane.columnSpan="2" GridPane.rowIndex="11" />
+                        <Pane GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <Pane GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Pane GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                 
+                        <Button fx:id="btnKaydet" mnemonicParsing="false" onAction="#btnKaydetOnAction" text="Kaydet" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="17" />
+                        <ComboBox fx:id="cbSatici" onAction="#cbSaticiOnAction" onMouseClicked="#cbSaticiOnClicked" prefHeight="31.0" prefWidth="212.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="13" />
+                        <ComboBox fx:id="cmbMarka" onAction="#cmbMarkaOnAction" onMouseClicked="#cmbMarkaOnClick" prefHeight="31.0" prefWidth="201.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="1" >
+                        <items>                                
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Hp" />
+                                    <String fx:value="Fujitsu" />
+                                    <String fx:value="Vestel" />
+                                    <String fx:value="Samsung" />
+                                    <String fx:value="Lexmark" />
+                                </FXCollections>                                
+                            </items>
+                        </ComboBox>
+                        <ComboBox fx:id="cmbModel" onAction="#cmbModelOnAction" onMouseClicked="#cmbModelOnClick" prefHeight="31.0" prefWidth="238.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3" >
+                        <items>                                
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="G840" />
+                                    <String fx:value="P571" />
+                                    <String fx:value="Omega" />
+                                    <String fx:value="5991" />
+                                    <String fx:value="MS811" />
+                                </FXCollections>                                
+                            </items>
+                        </ComboBox>
+                        <Button fx:id="btnGuncelle" mnemonicParsing="false" onAction="#btnGuncelleOnAction" text="Guncelle" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="17" />
+                        <ComboBox fx:id="cbAlimYapan" onAction="#cbAlimYapanOnAction" onMouseClicked="#cbAlimYapanOnClicked" prefHeight="31.0" prefWidth="212.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                        <ComboBox fx:id="cbUrunIsmi" onAction="#cbUrunIsmiOnAction" prefHeight="31.0" prefWidth="212.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                            <items>                                
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Bilgisayar" />
+                                    <String fx:value="Yazici" />
+                                    <String fx:value="Toner" />
+                                </FXCollections>                                
+                            </items>
+                        </ComboBox>
+                        <Button fx:id="btnSaticiEkle" mnemonicParsing="false" onAction="#btnSaticiEkleOnAction" prefHeight="30.0" prefWidth="30.0" stylesheets="@../../../Style/ekleButonu.css" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                        <Button fx:id="btnMarkaEkle" mnemonicParsing="false" onAction="#btnMarkaEkleOnAction" prefHeight="32.0" prefWidth="30.0" stylesheets="@../../../Style/ekleButonu.css" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <Button fx:id="btnModelEkle" mnemonicParsing="false" onAction="#btnModelEkleOnAction" prefHeight="30.0" prefWidth="30.0" stylesheets="@../../../Style/ekleButonu.css" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Label fx:id="lblSeriNo" text="Seri No :" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <TextField fx:id="tfSeriNo" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                        <Label fx:id="lblIslemciMarkasi" text="Islemci Markasi :" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                        <ComboBox fx:id="cbIslemciMarkasi" onMouseClicked="#cbIslemciMarkasiOnClicked" prefHeight="31.0" prefWidth="212.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                            <items>                                
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Amd A6 Serisi" />
+                                    <String fx:value="Amd Ryzen™ 5" />
+                                    <String fx:value="Amd A12 Serisi" />
+                                    <String fx:value="Amd A9 Serisi" />
+                                    <String fx:value="Amd Ryzen™ 3" />                                    
+                                    <String fx:value="Intel Core i9" />
+                                    <String fx:value="Intel Core M5" />
+                                    <String fx:value="Intel Core i7" />
+                                    <String fx:value="Intel Core i5" />
+                                    <String fx:value="Intel Core i3" />
+                                    <String fx:value="Intel Pentium" />
+                                </FXCollections>                                
+                            </items>                        
+                        </ComboBox>
+                        <Label fx:id="lblRamKapasitesi" text="Ram Kapasitesi :" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                        <ComboBox fx:id="cbRamKapasitesi" onMouseClicked="#cbRamKapasitesiOnClicked" prefHeight="31.0" prefWidth="212.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="9">
+                         <items>                                
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="2 GB" />
+                                    <String fx:value="3 GB" />
+                                    <String fx:value="4 GB" />
+                                    <String fx:value="8 GB" />
+                                    <String fx:value="16 GB" />                                    
+                                    <String fx:value="32 GB" />                                    
+                                </FXCollections>                                
+                            </items>                        
+                        </ComboBox>
+                        <Label fx:id="lblBaskiSayisi" text="Baski Sayisi :" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                        <TextField fx:id="tfBaskiSayisi" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                        <Label fx:id="lblUyumluModeller" text="Uyumlu Modeller :" GridPane.columnIndex="4" />
+                        <TextField fx:id="tfUyumluModeller" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                        <Label fx:id="lblKapasitesi" text="Kapasitesi :" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <TextField fx:id="tfKapasitesi" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                    </children>
+                </GridPane>
+            </children>
+        </AnchorPane>
+        <Button fx:id="btnKapat" layoutX="729.0" layoutY="-4.0" mnemonicParsing="false" onAction="#btnKapatOnAction" prefHeight="32.0" prefWidth="30.0" stylesheets="@../../../Style/btnOnText.css" />
+    </children>
+</Group>

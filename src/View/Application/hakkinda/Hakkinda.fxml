@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.application.hakkinda.HakkindaController">
+   <children>
+      <ImageView fx:id="imgFirmaResim" fitHeight="150.0" fitWidth="200.0" layoutX="249.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="248.35293579101562" AnchorPane.topAnchor="85.0">
+         <image>
+           
+         </image>
+      </ImageView>
+      <Label fx:id="lblFirmaIsmi" layoutX="236.0" layoutY="244.0" text="Şirket İsmi" />
+      <Label fx:id="lblCreatedBy" layoutX="292.0" layoutY="274.0" text="Created By" />
+      <Label fx:id="lblUretici" layoutX="279.0" layoutY="301.0" text="İsmail BOZKURT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
