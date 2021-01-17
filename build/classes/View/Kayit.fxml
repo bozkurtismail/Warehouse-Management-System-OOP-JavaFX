@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KayitController">
+   <children>
+      <BorderPane layoutX="242.0" layoutY="94.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Hyperlink fx:id="hlGiris" onAction="#giriseGeriGit" text="Zaten hesabiniz var mi? Oturum aç">
+                     <HBox.margin>
+                        
+                     </HBox.margin>
+                  </Hyperlink>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="310.0" prefWidth="350.0">
+                     <children>
+                        <TextField fx:id="tfKullaniciAdi" layoutX="44.0" layoutY="63.0" prefHeight="31.0" prefWidth="270.0" promptText="Kullanici Adi Giriniz">
+                           <tooltip>
+                              <Tooltip text="KullaniciAdinin Girilmesi Gerekiyor" />
+                           </tooltip>
+                        </TextField>
+                        <TextField fx:id="tfisim" layoutX="44.0" layoutY="103.0" prefHeight="31.0" prefWidth="270.0" promptText="Isminizi Giriniz" />
+                        <TextField fx:id="tfsoyad" layoutX="44.0" layoutY="143.0" prefHeight="31.0" prefWidth="270.0" promptText="Soyadinizi Giriniz" />
+                        <TextField fx:id="tfsicil" layoutX="44.0" layoutY="183.0" prefHeight="31.0" prefWidth="270.0" promptText="Sicilinizi Giriniz" />                        
+                        <PasswordField fx:id="pfSifre" layoutX="44.0" layoutY="223.0" prefHeight="31.0" prefWidth="269.0" promptText="Sifrenizi Giriniz" />
+                        <PasswordField fx:id="pfSifreTekrar" layoutX="44.0" layoutY="263.0" prefHeight="31.0" prefWidth="269.0" promptText="Tekrar Sifrenizi Giriniz" />
+                        <Button fx:id="btnKaydol" layoutX="129.0" layoutY="303.0" mnemonicParsing="false" onAction="#btnKaydol" text="Kaydol" />
+                        <Text layoutX="149.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kayıt">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        
+                        <Button fx:id="btnKullaniciAdiTemizle" graphicTextGap="0.0" layoutX="279.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" stylesheets="@../Style/btnOnText.css" />
+                        <Button fx:id="btnIsimTemizle" graphicTextGap="0.0" layoutX="279.0" layoutY="105.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" stylesheets="@../Style/btnOnText.css" />
+                        <Button fx:id="btnSoyadTemizle" graphicTextGap="0.0" layoutX="279.0" layoutY="145.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" stylesheets="@../Style/btnOnText.css" />
+                        <Button fx:id="btnSicilTemizle" graphicTextGap="0.0" layoutX="279.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" stylesheets="@../Style/btnOnText.css" />
+                        <Button fx:id="btnSifreTemizle" graphicTextGap="0.0" layoutX="279.0" layoutY="225.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" stylesheets="@../Style/btnOnText.css" />
+                        <Button fx:id="btnTekrarSifreTemizle" graphicTextGap="0.0" layoutX="278.0" layoutY="265.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" stylesheets="@../Style/btnOnText.css" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children> 
+</AnchorPane>
