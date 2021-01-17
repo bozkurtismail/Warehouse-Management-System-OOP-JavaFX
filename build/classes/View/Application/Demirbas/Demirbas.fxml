@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="871.0" stylesheets="/Style/anasayfa.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.application.demirbas.DemirbasController">
+    <children>
+        <BorderPane layoutX="262.0" layoutY="138.0" prefHeight="540.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane prefHeight="111.0" prefWidth="683.0" style="-fx-border-color: #ff4e3c; -fx-border-style: solid; -fx-border-width: 0px 0px 5px;" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER" layoutX="194.0" layoutY="28.0" prefHeight="133.0" prefWidth="831.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <AnchorPane prefHeight="106.0" prefWidth="469.0" />
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+            </top>
+            <center>
+                <AnchorPane prefHeight="357.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+                    <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                    </padding>
+                    <children>
+                        <HBox alignment="CENTER" layoutX="177.0" layoutY="165.0" prefHeight="344.0" prefWidth="683.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <AnchorPane prefHeight="392.0" prefWidth="648.0">
+                                    <children>
+                                        <VBox layoutX="215.0" layoutY="73.0" prefHeight="392.0" prefWidth="648.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <children>
+                                                <Label fx:id="lblDepoIsmi" alignment="CENTER" prefHeight="55.0" prefWidth="1130.0" text="DEPO ALANI">
+                                                    <font>
+                                                        <Font name="System Bold" size="27.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <GridPane layoutX="13.0" layoutY="49.0" prefHeight="345.0" prefWidth="855.0">
+                                            <columnConstraints>
+                                    <ColumnConstraints maxWidth="86.0" minWidth="10.0" prefWidth="56.0" />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                                <ColumnConstraints />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Button fx:id="K2" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K2" GridPane.columnIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="K1" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K1" GridPane.columnIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="K3" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K3" GridPane.columnIndex="3">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="K4" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K4" GridPane.columnIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="K5" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K5" GridPane.columnIndex="5">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="K6" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K6" GridPane.columnIndex="6">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="K7" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K7" GridPane.columnIndex="7">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="K8" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K8" GridPane.columnIndex="8">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="K9" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K9" GridPane.columnIndex="9">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="K10" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="K10" GridPane.columnIndex="10">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y21" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y21" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y22" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y22" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y23" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y23" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y24" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y24" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y25" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y25" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y26" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y26" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y27" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y27" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y28" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y28" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y30" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y30" GridPane.columnIndex="10" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="Y29" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Y29" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T41" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T41" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T42" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T42" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T43" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T43" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T44" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T44" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T45" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T45" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T46" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T46" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T47" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T47" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T48" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T48" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T49" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T49" GridPane.columnIndex="9" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                                <Button fx:id="T50" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="T50" GridPane.columnIndex="10" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </GridPane.margin></Button>
+                                    <Label text="KASA:" />
+                                    <Label text="YAZICI:" GridPane.rowIndex="2" />
+                                    <Label text="TONER:" GridPane.rowIndex="4" />
+                                            </children>
+                                            <opaqueInsets>
+                                                <Insets />
+                                            </opaqueInsets>
+                                        </GridPane>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+            </center>
+            <padding>
+                <Insets left="20.0" right="20.0" />
+            </padding>
+            <bottom>
+                <AnchorPane prefHeight="85.0" prefWidth="683.0" style="-fx-border-color: ff4e3c; -fx-border-width: 5px 0px 0px 0px; -fx-border-style: solid;" BorderPane.alignment="CENTER" />
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>

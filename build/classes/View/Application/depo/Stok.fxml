@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="599.0" prefWidth="965.0" stylesheets="/Style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.application.depo.StokController">
+    <children>
+        <BorderPane fx:id="bpDepo" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane fx:id="acUstDepo" prefHeight="81.0" prefWidth="965.0" stylesheets="/Style/depo.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <GridPane prefHeight="92.0" prefWidth="965.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="488.0" minWidth="10.0" prefWidth="488.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1">
+                                    <children>
+                                        <ToggleButton fx:id="btnStok" mnemonicParsing="false" onAction="#btnStokOnAction" text="Stok" />
+                                        <ToggleButton fx:id="btnSatici" mnemonicParsing="false" onAction="#btnSaticiFirmaOnAction" text="Satici Firma" />
+                                        <ToggleButton fx:id="btnMarka" mnemonicParsing="false" onAction="#btnMarkaOnAction" text="Marka" />
+                                        <ToggleButton fx:id="btnModel" mnemonicParsing="false" onAction="#btnModelOnAction" text="Model" />
+                                        <ToggleButton fx:id="btnDepo" mnemonicParsing="false" onAction="#btnUniteOnAction" text="Unite" />                                        
+                                    </children>
+                                    <padding>
+                                        <Insets right="10.0" />
+                                    </padding>
+                                </HBox>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Label fx:id="lblUst" layoutX="14.0" layoutY="21.0" text="Depo">
+                                            <font>
+                                                <Font size="34.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </GridPane>
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" />
+                    </padding>
+                </AnchorPane>
+            </top>
+            <center>
+                <StackPane fx:id="spAnaIcerik" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

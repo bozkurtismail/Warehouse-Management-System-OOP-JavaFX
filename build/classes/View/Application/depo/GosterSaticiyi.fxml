@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="acIcerik" prefHeight="607.0" prefWidth="880.0" stylesheets="/Style/MainStyle.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.application.depo.GosterSaticiyiController">
+   <children>
+      <BorderPane layoutX="24.0" prefHeight="563.0" prefWidth="752.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="55.0" prefWidth="752.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="78.0" layoutY="-22.0" prefHeight="78.0" prefWidth="752.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TextField fx:id="tfAra" onKeyReleased="#tfAraOnType" prefHeight="31.0" prefWidth="570.0" promptText="Satici Ara" />
+                        <Button fx:id="btnYenile" mnemonicParsing="false" onAction="#btnYenileOnAction" prefHeight="31.0" prefWidth="30.0">
+                           <tooltip>
+                              <Tooltip text="Yenile" />
+                           </tooltip></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <TableView fx:id="tblSatici" editable="true" onKeyReleased="#tblSaticiOnKeyPress" onMouseClicked="#tblSaticiOnClick" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: none; -fx-border-color: none;" BorderPane.alignment="CENTER">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <columns>
+                  <TableColumn fx:id="clmSaticiId" prefWidth="59.0" text="ID" visible="false" />
+                  <TableColumn fx:id="clmSaticiIsmi" prefWidth="103.0" text="Satici" />
+                  <TableColumn fx:id="clmSaticiTelefonNumarasi" prefWidth="145.0" text="Iletisim Numarasi" />
+                  <TableColumn fx:id="clmSaticiAdresi" prefWidth="126.0" sortable="false" text="Address" />                  
+               </columns>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                        <MenuItem fx:id="mbAra" mnemonicParsing="false" onAction="#mbAra" text="Ara" />
+                      <MenuItem mnemonicParsing="false" onAction="#mbGoster" text="Goster" />
+                        <MenuItem mnemonicParsing="false" onAction="#mbGecmisGosterim" text="Gecmis Guncel Gostesim" />
+                        <MenuItem mnemonicParsing="false" onAction="#mbYeniEkle" text="Yeni Ekle" />
+                        <MenuItem mnemonicParsing="false" onAction="#mbSil" text="Secileni Sil" />
+                        <MenuItem mnemonicParsing="false" onAction="#mbDuzenle" text="Duzenle" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="75.0" prefWidth="820.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" layoutX="157.0" prefHeight="100.0" prefWidth="820.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="btnYeniEkle" mnemonicParsing="false" onAction="#btnYeniEkleOnAction" text="Yeni Ekle" />
+                        <Button fx:id="btnGuncelle" mnemonicParsing="false" onAction="#btnGuncelleOnAction" prefHeight="33.0" prefWidth="117.0" text="Guncelle" />
+                        <Button mnemonicParsing="false" onAction="#btnSilOnAction" prefHeight="33.0" prefWidth="120.0" text="Sil" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+   <padding>
+      <Insets left="30.0" right="30.0" />
+   </padding>
+</AnchorPane>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+    
+

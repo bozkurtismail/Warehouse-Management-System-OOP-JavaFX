@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="spUrunIcerigi" prefHeight="580.0" prefWidth="1004.0" stylesheets="/Style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.application.depo.SimdikiStokDurumuController">
+    <children>
+        <AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="834.0">
+            <children>
+                <BorderPane layoutX="220.0" layoutY="140.0" prefHeight="479.0" prefWidth="639.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <center>
+                        <TableView fx:id="tblSimdikiDepoyuGoster" editable="true" onMouseClicked="#tblSimdikiDepoyuGosterOnClick" onScroll="#tblSimdikiDepoyuGosterOnScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: none; -fx-border-color: none;" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                            <columns>
+                                <TableColumn fx:id="tblClmUrunId" prefWidth="40.0" text="ID" />
+                                <TableColumn fx:id="tblClmUrunIsmi" prefWidth="70.0" text="URUN ISMI" />                       
+                                <TableColumn fx:id="tblClmAlimYapan" text="ALIM YAPAN" />                       
+                                <TableColumn fx:id="tblClmAciklama" prefWidth="70.0" text="ACIKLAMA" />
+                                <TableColumn fx:id="tblClmAlimTarihi" prefWidth="75.0" text="ALIM TARIHI" />                        
+                                <TableColumn fx:id="tblClmSatici" prefWidth="60.0" text="SATICI" />
+                                <TableColumn fx:id="tblClmMarka" prefWidth="60.0" text="MARKA" />
+                                <TableColumn fx:id="tblClmModel" prefWidth="60.0" text="MODEL" />
+                                <TableColumn fx:id="tblClmSeriNo" prefWidth="68.0" text="SERI NO" />
+                                <TableColumn fx:id="tblClmIslemciMarkası" prefWidth="68.0" text="ISLEMCI MARKASI" />
+                                <TableColumn fx:id="tblClmRamKapasitesi" prefWidth="68.0" text="RAM KAPASITESI" />
+                                <TableColumn fx:id="tblClmBaskiSayisi" prefWidth="68.0" text="BASKI SAYISI" />
+                                <TableColumn fx:id="tblClmUyumluModeller" prefWidth="68.0" text="UYUMLU MODELLER" />
+                                <TableColumn fx:id="tblClmKapasitesi" prefWidth="68.0" text="KAPASITESI" />
+                            </columns>
+                            <contextMenu>
+                                <ContextMenu />
+                            </contextMenu>
+                        </TableView>
+                    </center>
+                    <bottom>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="944.0" spacing="20.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Button fx:id="btnYeniUrun" mnemonicParsing="false" onAction="#btnYeniUrunOnAction" text="Yeni Urun" />
+                                <Button fx:id="btnGuncelle" mnemonicParsing="false" onAction="#btnGuncelleOnAction" text="Guncelle" />
+                                <Button fx:id="btnSil" mnemonicParsing="false" onAction="#btnSilOnAction" text="sil" />
+                            </children>
+                            <BorderPane.margin>
+                                <Insets right="20.0" />
+                            </BorderPane.margin>
+                        </HBox>
+                    </bottom>
+                    <top>
+                        <BorderPane prefHeight="85.0" prefWidth="944.0" BorderPane.alignment="CENTER">
+                            <top>
+                                <HBox alignment="CENTER" prefHeight="44.0" prefWidth="944.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <TextField fx:id="tfAra" onKeyReleased="#tfAraOnKeyRelese" prefHeight="31.0" prefWidth="608.0" />
+                                        <Button fx:id="btnYenile" mnemonicParsing="false" onAction="#btnYenileOnACtion" prefHeight="31.0" prefWidth="32.0" />
+                                    </children>
+                                </HBox>
+                            </top>
+                            <center>
+                                
+                            </center>
+                        </BorderPane>
+                    </top>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+    <padding>
+        <Insets left="30.0" right="30.0" />
+    </padding>
+</StackPane>

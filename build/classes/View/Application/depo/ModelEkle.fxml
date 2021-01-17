@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.application.depo.ModelEkleController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="409.0" prefWidth="469.0">
+         <children>
+            <GridPane layoutX="35.0" layoutY="55.0">
+               <children>
+                  <Label text="Model Ismi" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfModelIsmi" GridPane.columnSpan="4" GridPane.rowIndex="3">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets></TextField>
+                  <Button fx:id="btnModelEkle" mnemonicParsing="false" onAction="#btnModelEkleOnAction" text="Kaydet" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+                  <Button fx:id="btnGuncelle" mnemonicParsing="false" onAction="#btnGuncelleOnAction" text="Guncelle" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+                  <Pane GridPane.columnIndex="3" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Label fx:id="lblUst" layoutX="168.0" layoutY="27.0" text="Model Ekle">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+         <stylesheets>
+            <URL value="@../../../style/MainStyle.css" />
+            <URL value="@../../../style/acilirPencere.css" />
+         </stylesheets>
+      </AnchorPane>
+      <Button fx:id="btnKapat" layoutX="451.0" layoutY="-4.0" mnemonicParsing="false" onAction="#btnKapatOnAction" prefHeight="36.0" prefWidth="38.0" stylesheets="@../../../style/btnOnText.css" />
+   </children>
+</Group>
