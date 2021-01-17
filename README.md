@@ -20,6 +20,6 @@ This project is purely JavaFX - it gives you a basis of what to do regarding you
 ![10](https://user-images.githubusercontent.com/33539593/104849524-312cfe80-58fb-11eb-8d97-922b7b171e1b.JPG)
 #
 ![11](https://user-images.githubusercontent.com/33539593/104849675-160ebe80-58fc-11eb-8725-4acdbd682b75.JPG)
-# UML DIAGRAM
+# UML Diagram
 ![12](https://user-images.githubusercontent.com/33539593/104849526-32f6c200-58fb-11eb-86b5-b743d8e0a15f.jpg)
 
